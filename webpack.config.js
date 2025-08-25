@@ -1,10 +1,19 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
         mode: 'development',
         entry:'./src/index.js',
+        devServer: {
+            port: 3000,
+            open: true
+        },
+        devtool: 'inline-source-map',
+        resolve:{
+            extensions: ['.js']
+        },
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: '[name].[contenthash].js',
@@ -13,15 +22,16 @@ module.exports = {
         module: {
             rules: [
                 {
-                    test: /\.css$/i,
-                    use: ["style-loader",
-                        { 
-                            loader: "css-loader",
-                            options: {
-                                modules: true,
-                            },
-                        },
+                    test: /\.s[ac]ss$/i,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        "css-loader",
+                        "sass-loader",
                     ],
+                },
+                {
+                    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                    type: 'asset/resource',
                 },
             ],
         },
@@ -31,6 +41,7 @@ module.exports = {
                 filename: 'index.html',
                 template: path.resolve(__dirname, 'public', 'index.html')
             }),
-            new CleanWebpackPlugin()
+            new CleanWebpackPlugin(),
+            new MiniCssExtractPlugin()
         ]
     }

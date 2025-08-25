@@ -1,0 +1,22 @@
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 150px;
+    .greenButton{
+        color: #47A62A;
+        font-size: 14.14px;
+        line-height: 14.1px;
+        letter-spacing: 0.57px;
+        font-weight: normal;
+    }
+
+    span{
+        color: white;
+        font-size: 20.2px;
+        font-weight: bold;
+        letter-spacing: 0.81px;
+
+        line-height: 20.2px;
+    }
+}

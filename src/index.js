@@ -1,5 +1,5 @@
-import './global/global.css'
-
-const app = document.querySelector('#app')
-
-app.textContent += 'Hi!!'
+import './global/global.scss'
+import Layout from './Layout/Layout.js'
+import Home from './pages/Home.js'
+const app = document.querySelector('#root')
+app.appendChild(Layout(Home()))

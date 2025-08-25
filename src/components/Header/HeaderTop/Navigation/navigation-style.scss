@@ -1,0 +1,17 @@
+nav {
+    background-color: #1E1E1E;
+    padding-top: 27.16px;
+    padding-bottom: 24.84px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .logo{
+        position: absolute;
+        top: 19px;
+        width: 246px;
+        height: 163px;
+
+    }
+}

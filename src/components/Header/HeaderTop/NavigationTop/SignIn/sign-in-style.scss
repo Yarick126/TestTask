@@ -1,0 +1,10 @@
+.signIn{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: solid 3px #47A62A;
+    span {
+        color: white;
+    }
+}

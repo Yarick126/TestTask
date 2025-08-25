@@ -1,0 +1,12 @@
+.graphicInfo {
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    span{
+        font-size: 14.14px;
+        letter-spacing: 0.57px;
+        line-height: 22px;
+    }
+}

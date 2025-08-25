@@ -1,0 +1,23 @@
+.search{
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 3px #818181;
+    input{
+        border: none;
+        background-color: inherit;
+        font-size: 14.14px;
+        line-height: 14.1px;
+        letter-spacing: 0.57px;
+
+        &:focus{
+            outline: none;
+        }
+    }
+    .searchLogo{
+        width: 25px;
+        height: 25px;
+    }
+}   

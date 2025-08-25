@@ -1,0 +1,23 @@
+.headerCenter{
+    width: 100%;
+    padding-top: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span {
+        color: #F8E3C4;
+        font-size: 22.22px;
+        line-height: 22.2px;
+        letter-spacing: 0.89px;
+    }
+
+    h1{
+        color: white;
+        font-size: 60.6px;
+        line-height: 66px;
+        letter-spacing: 3.64px;
+        max-width: 960px;
+        text-align: center;
+    }
+}
