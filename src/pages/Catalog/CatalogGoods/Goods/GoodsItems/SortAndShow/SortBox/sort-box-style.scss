@@ -1,0 +1,27 @@
+.sortBox{
+    display: flex;
+    flex-direction: row;
+    column-gap: 52px;
+    align-items: center;
+    label{
+        color: #828282
+    }
+
+    .show{
+        width: 79px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 13px;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .sort{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 13px;
+    }
+}

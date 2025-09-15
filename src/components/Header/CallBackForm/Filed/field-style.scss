@@ -1,0 +1,51 @@
+.field{
+    color:white;
+    width: 383px;
+    background-color: none;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 25px;
+    position: relative;
+    border-bottom: 2px solid #8c8c8c;
+    .fieldIcon{
+        width: 27px;
+        height: 27px;
+    }
+
+    .inputField{
+        width: 100%;
+        font-size: 14.14px;
+        line-height: 14.1px;
+        letter-spacing: 0.57px;
+        outline: none;
+        border: none;
+        &::-webkit-input-placeholder{
+            color: white;
+        }
+        &::-moz-placeholder{
+            color: white;
+        }
+        &:active,
+        &:focus{
+            outline: none;
+        }
+    }
+    &::before, &::after{
+        content: "";
+        width: 2px;
+        height: 4px;
+        background-color: #8c8c8c;
+        position: absolute;
+        bottom: -2px;
+
+    }
+    &::before{
+
+        left: -2px;
+    }
+    &::after{
+        right: -2px;
+    }
+}

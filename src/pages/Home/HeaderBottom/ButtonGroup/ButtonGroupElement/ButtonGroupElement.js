@@ -1,5 +1,5 @@
 import './button-group-element.scss'
-import Image from '../../../../ui/Image/Image'
+import Image from 'UI/Image/Image'
 
 const ButtonGroupElement = ({firstText, secondText, buttonIcon}) => {
     const element = document.createElement('button')

@@ -1,5 +1,6 @@
 import './contact-info-style.scss'
 import Button from '../../../../ui/Button/Button.js'
+
 const ContactInfo = () => {
 
     const ContactInfoComponent = document.createElement('div')
@@ -9,7 +10,13 @@ const ContactInfo = () => {
     number.textContent = '8 (495) 640-24-86'
     
     const callBackButton = Button({text: 'Обратный звонок', className: 'greenButton'})
+    callBackButton.addEventListener('click', (e)=>{
+        e.preventDefault()
 
+        const form = document.querySelector('.callBackForm')
+        form.style.display = 'flex'
+
+    })
     ContactInfoComponent.appendChild(number)
     ContactInfoComponent.appendChild(callBackButton)
     return ContactInfoComponent

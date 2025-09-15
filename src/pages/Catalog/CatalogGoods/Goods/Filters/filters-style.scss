@@ -1,0 +1,43 @@
+.filters{
+    padding-top: 30px;
+    span{
+        font-size: 28px;
+        line-height: auto;
+        letter-spacing: 0.6%;
+        font-weight: bold;
+    }
+    .pricesBox{
+        display: flex;
+        flex-direction: row;
+        column-gap: 33px;
+        align-items: center;
+        margin-top: 23px;
+
+
+    }
+    .filtersButtons{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 25px;
+        .acceptButton{
+            width: 172px;
+            height: 52px;
+
+            color: #47A529;
+            font-size: 16px;
+            letter-spacing: .4%;
+            line-height: auto;
+            background-color: rgb(244, 244, 244);
+            border: 1px solid rgb(226, 226, 226);
+        }
+
+        .removeButton{
+            width: 24px;
+            height: 24px;
+            background-image: url('Assets/filterRemoveButton.png');
+        }
+
+    }
+}

@@ -1,0 +1,38 @@
+.pageButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 47px;
+    button{
+        width: 43px;
+        height: 43px;
+
+    }
+    .leftArrow{
+        background-image: url('Assets/arrowRight.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: scaleX(-1);
+    }
+
+    .rightArrow{
+        background-image: url('Assets/arrowRight.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .pageButton{
+        color: black;
+        font-size: 16px;
+        text-align: center;
+        &:hover{
+            background-color: #47a62a;
+            color:white;
+        }
+        &:focus{
+            background-color: #47a62a;
+            color:white;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.item{
+    position: relative;
+    width: 317px;
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(249, 249, 249, .7);
+    .imageAndDescription{
+        height: 285px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 45px;
+        .itemImage{
+            width: 266px;
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 25px;
+        }
+    }
+    .priceBox{
+        height: 69px;
+        font-size: 22px;
+        color: #47a62a;
+        display: flex;
+        font-weight: bold;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &:hover{
+        border: 1px solid #47a62a;
+    }
+
+    .hit{
+        position: absolute;
+        width: 61px;
+        height: 28px;
+        background-color: #47a62a;
+        color: white;
+        top: -11px;
+        left: 230px;
+        z-index: 90;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

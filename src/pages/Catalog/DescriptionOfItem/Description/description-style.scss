@@ -1,0 +1,16 @@
+.description{
+    display: flex;
+    flex-direction: row;
+    column-gap: 90px;
+    h2{
+        font-size: 48px;
+        letter-spacing: 0.6%;
+        line-height: 50px;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,75 @@
+.callBackForm {
+    display: none;
+    width: 741px;
+    position: absolute;
+    top: 201px;
+    left: 28vw;
+    background-color: #1E1E1E;
+    padding: 13px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 35px;
+    padding-bottom: 58px;
+    background-image: url('../../../assets/formImage.png');
+    background-repeat: no-repeat;
+    background-position: 10% 100%;
+    background-size: contain;
+    z-index: 101;
+    .exitSection{
+        text-align: end;
+        width: 100%;
+        .exitIcon:hover{
+            cursor: pointer;
+        }
+    }
+    .formTitle{
+        font-size: 46.46px;
+        line-height: 46.5px;
+        letter-spacing: 2.79px;
+        color: #8D8D8D;
+    }
+    .agreementComponent{
+        margin-top: 14px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 26.5px;
+        align-items: center;
+        label{
+            color: white;
+        }
+        .agreementCheckBox{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #8c8c8c;
+            position: relative;
+            &:checked::before{
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 14px;
+                height: 14px;
+                background-color: #48A62A;
+            }
+        }
+    }
+
+    .callBackButton{
+        font-size: 20.2px;
+        line-height: 20.2px;
+        letter-spacing: 0.81px;
+        text-transform: uppercase;
+        color: #48A62A;
+        outline: none;
+        border: 1px solid #444444;
+        padding: 18px 30px;
+        &:focus{
+            outline: none;
+        }
+        cursor: pointer;
+    }
+}

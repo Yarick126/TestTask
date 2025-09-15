@@ -1,13 +1,12 @@
 import './button-style.scss'
 
-const Button = ({text, className, onClick}) => {
+const Button = ({text , className = '', onClick , title = ''}) => {
 
     const ButtonComponent = document.createElement('button')
-
-    ButtonComponent.textContent = text
+    ButtonComponent.textContent = text ?? text
     ButtonComponent.className = className
-    ButtonComponent.addEventListener('onclick', onClick)
-
+    ButtonComponent.addEventListener('click', onClick)
+    ButtonComponent.setAttribute('title' , title)
     return ButtonComponent
 }
 

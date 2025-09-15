@@ -1,12 +1,10 @@
 .sliderItems{
     width: 1390px;
-    height: 313px;
     display: flex;
     flex-direction: row;
     column-gap: 48px;
     overflow-y: hidden;
     margin-bottom: 20px;
-    max-height: 268px;
     padding-bottom: 68px;
     &::-webkit-scrollbar{
         height: 2px;

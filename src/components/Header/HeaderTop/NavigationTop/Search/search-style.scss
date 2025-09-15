@@ -1,17 +1,27 @@
 .search{
+    width: 273px;
     display: flex;
     flex-direction: row;
     background-color: inherit;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-bottom: solid 3px #818181;
+    position: relative;
+    padding-left: 14px;
+    padding-right: 13px;
     input{
+        color:white;
         border: none;
         background-color: inherit;
         font-size: 14.14px;
         line-height: 14.1px;
         letter-spacing: 0.57px;
-
+        &::-webkit-input-placeholder{
+            color: white;
+        }
+        &::-moz-placeholder{
+            color: white;
+        }
         &:focus{
             outline: none;
         }
@@ -19,5 +29,21 @@
     .searchLogo{
         width: 25px;
         height: 25px;
+    }
+        &::before, &::after{
+        content: "";
+        width: 3px;
+        height: 6px;
+        background-color: #8c8c8c;
+        position: absolute;
+        bottom: -3px;
+
+    }
+    &::before{
+
+        left: -2px;
+    }
+    &::after{
+        right: -2px;
     }
 }   

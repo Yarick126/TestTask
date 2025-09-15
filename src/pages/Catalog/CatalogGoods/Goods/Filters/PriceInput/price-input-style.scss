@@ -1,0 +1,29 @@
+.priceInput {
+    width: 125px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 42px;
+    padding-left: 17px;
+    padding-right: 15px;
+    margin-bottom: 31px;
+    label{
+        font-size: 16px;
+        line-height: auto;
+        letter-spacing: 0;
+        color: #9a9a9a
+    }
+    input{
+        width: 100%;
+        border: none;
+        font-size: 18px;
+        line-height: auto;
+        letter-spacing: 0%;
+        color: black;
+        &:focus{
+            outline: none;
+        }
+    }
+}

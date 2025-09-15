@@ -1,0 +1,33 @@
+.checkBoxField{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+
+    label{
+        font-size: 18px;
+        line-height: auto;
+        letter-spacing: 0;
+        position: relative;
+
+    }
+    input {
+        width: 26px;
+        height: 26px;
+        background-color: white;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        &:checked + label::before{
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 13px;
+            top: 0;
+            left: -44px;
+            background-image: url('Assets/галочка.png');
+            
+        }
+    }
+}

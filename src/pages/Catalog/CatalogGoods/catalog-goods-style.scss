@@ -1,0 +1,12 @@
+.catalogGoods{
+    position: relative;
+    .background{
+        position: absolute;
+        background-image: url('Assets/catalogBackground.png');
+        background-repeat: repeat-y;
+        height: 1250px;
+        width: 681px;
+        object-fit: cover;
+        z-index: -1;
+    }
+}

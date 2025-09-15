@@ -3,7 +3,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    column-gap: 7px;
     border-right: solid 3px #47A62A;
+    &:hover{
+        cursor: pointer;
+    }
     span {
         color: white;
     }

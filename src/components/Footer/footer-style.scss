@@ -1,0 +1,33 @@
+footer{
+    background-color: #1E1E1E;
+    margin-top: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 300px;
+    padding-top: 96px;
+    padding-bottom: 57px;
+    .footerLogo{
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        background-color: #1E1E1E;
+        z-index: 10;
+        padding: 20px;
+    }
+    .buttonGroupFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        button{
+            font-size: 14.14px;
+            line-height: 14.1px;
+            letter-spacing: .57px;
+
+            text-transform: uppercase;
+        }
+
+    }
+}

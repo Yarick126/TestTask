@@ -5,7 +5,8 @@ const NavigationGroup = (buttonsArray) => {
     NavigationGroupComponent.className = 'navigationGroup'
     for (let i = 0; i < buttonsArray.length; i++) {
         NavigationGroupComponent.appendChild(buttonsArray[i]);
-    }
+    }   
+
     return NavigationGroupComponent
 }
 

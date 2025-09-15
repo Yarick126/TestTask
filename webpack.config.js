@@ -12,7 +12,28 @@ module.exports = {
         },
         devtool: 'inline-source-map',
         resolve:{
-            extensions: ['.js']
+            extensions: ['.js'],
+            alias: {
+                Assets: path.resolve(__dirname, 'src/assets'),
+                UI: path.resolve(__dirname, 'src/components/ui')
+            },
+            fallback: {
+                util: require.resolve("util/"),
+                url: require.resolve("url/"),
+                stream: require.resolve("stream-browserify"),
+                path: require.resolve("path-browserify"),
+                assert: require.resolve("assert/"),
+                constants: require.resolve("constants-browserify"),
+                os: require.resolve("os-browserify/browser"),
+                buffer: require.resolve("buffer/"),
+                vm: require.resolve("vm-browserify"),
+                crypto: require.resolve("crypto-browserify"),
+                zlib: require.resolve("browserify-zlib"),
+                http: require.resolve("stream-http"),
+                https: require.resolve("https-browserify"),
+                querystring: require.resolve("querystring-es3"),
+                tty: require.resolve("tty-browserify")
+            }
         },
         output: {
             path: path.resolve(__dirname, 'dist'),
@@ -43,5 +64,6 @@ module.exports = {
             }),
             new CleanWebpackPlugin(),
             new MiniCssExtractPlugin()
-        ]
+        ],
+
     }
