@@ -1,6 +1,6 @@
 import Input from 'UI/Input/Input.js'
 import Image from 'UI/Image/Image.js'
-import SearchLogo from 'Assets/searchLogo.png'
+import SearchLogo from 'Assets/searchSVG.svg'
 import './search-style.scss'
 
 const Search = () => {

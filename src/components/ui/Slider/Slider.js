@@ -5,8 +5,8 @@ import SlidersItems from './SliderItems/SliderItems'
 
 const Slider = ({items}) => {
     const SliderComponent = document.createElement('div')
-    SliderComponent.className ='slider'
-
+    SliderComponent.classList.add('slider')
+    
     const SliderButton = Button({text: 'СМОТРЕТЬ ВСЕ', className: 'sliderButton', onClick: ()=>{}})
 
     SliderComponent.appendChild(SliderButton)

@@ -1,8 +1,8 @@
-import Image from '../../ui/Image/Image'
+import Image from 'UI/Image/Image'
 import './contact-info-group-style.scss'
-import SmsIcon from '../../../assets/Фигура 9 копия 4.png'
-import TgIcon from '../../../assets/Прямоугольник 550 копия.png'
-import VKIcon from '../../../assets/Фигура 513.png'
+import SmsIcon from 'Assets/whatsuppSVG.svg'
+import TgIcon from 'Assets/tgSVG.svg'
+import VKIcon from 'Assets/vkSVG.svg'
 
 const ContactInfoGroup = () => {
     const ContactInfoGroupComponent = document.createElement('div')

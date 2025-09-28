@@ -4,7 +4,7 @@ import './navigation-style.scss'
 import NavigationGroup from './NavigationGroup/NavigationGroup'
 import Logo from 'Assets/logo.png'
 import DropDown from 'UI/DropDown/DropDown'
-import Link from '../../../ui/Link/Link'
+import Link from 'UI/Link/Link'
 
 const Navigation = () => {
     const Nav = document.createElement('nav')
@@ -12,12 +12,12 @@ const Navigation = () => {
     Nav.appendChild(NavigationGroup([
         DropDown({options: 
             [
-                Button({text: 'СВИДЕТЕЛЬСТВО'}),
-                Button({text: 'сертификаты'}),
-                Button({text: 'партнеры'}),
-                Button({text: 'гарантии'}),
-                Button({text: 'новости'}),
-                Button({text: 'вакансии'})] , 
+                Button({text: 'СВИДЕТЕЛЬСТВО', className: 'optionButton'}),
+                Button({text: 'сертификаты', className: 'optionButton'}),
+                Button({text: 'партнеры', className: 'optionButton'}),
+                Button({text: 'гарантии', className: 'optionButton'}),
+                Button({text: 'новости', className: 'optionButton'}),
+                Button({text: 'вакансии', className: 'optionButton'})] , 
                 className: 'navDropDown'}),
         Link({text:'ПРОДУКЦИЯ', href: '#/catalog'}),
         Button({text:'СОТРУДНИЧЕСТВО'}),

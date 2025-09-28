@@ -29,16 +29,17 @@
         align-items: center;
         column-gap: 10px;
         a{
+            width: 43px;
+            height: 43px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 43px;
-            height: 43px;
-
             img{
-                object-fit: cover;
+                width: 28px;
+                height: 25px;
             }
+            
         }
         .smsLink{
             background-color: #47A62A;

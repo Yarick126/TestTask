@@ -1,37 +1,41 @@
 .buttonGroupElement{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 12px;
-
-    padding-top: 52px;
-    padding-left: 39px;
-    padding-bottom: 52px;
-    padding-right: 50px;
-    background-color: #212121;
-    border-top: solid 2px #212121;
-    .buttonIcon{
+    display: grid;
+    height: 210px;
+    box-sizing: border-box;
+    grid-template-columns: 95px auto;
+    column-gap: 46px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    padding-left: 44px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-right: solid 1px black;
+    border-top: 1px solid transparent;
+    .svg{
         width: 94px;
-        height: 92px;
+        height: 94px;
     }
     .buttonTitle{
             display: flex;
             flex-direction: column;
             align-items: start;
-            row-gap: 24px;
+            row-gap: 25px;
             span{
-                font-size: 32.32px;
-                line-height: 32.3px;
-                letter-spacing: 1.29px;
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: 40;
+                font-weight: 600;
             &:first-child{
                 color: #C8A87B;
-                font-size: 18.18px;
-                line-height: 18.2px;
-                letter-spacing: 0.73px;
+                font-size: 18px;
+                line-height: 38px;
+                letter-spacing: 40;
+                font-weight: 600;
             }
         }
     }
     &:hover{
+        background-color: rgba($color: #000000, $alpha: .4);
         border-top: solid 2px #C8A87B;
         color: white;
     }

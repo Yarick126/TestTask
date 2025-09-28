@@ -1,13 +1,33 @@
 .news {
+    width: 100%;
     background-image: url('../../../assets/black-and-white-pattern-ttwpaopov13p8u8m.png');
     height: 628px;
     text-align: center;
     padding-top: 90px;
-    position: relative;
-    h2{
-        font-size: 64.64px;
-        line-height: 64.6px;
-        letter-spacing: 3.88px;
-        text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 100px;
+    .newsTitle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        hr{
+            outline: none;
+        }
+        h2{
+            width: 245px;
+            font-size: 64.64px;
+            line-height: 50px;
+            letter-spacing: 3.88px;
+            text-transform: uppercase;
+        }
+        margin-bottom: 25px;
+    }
+
+    .sliderItems{
+        width: 1400px;
     }
 }

@@ -1,25 +1,27 @@
 .companyDescription{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-
+    width: 100%;
     .titleDescription{
         height: 574px;
         background-image: url('../../../assets/DescriptionPhon1.png');
         background-repeat: no-repeat;
-        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 90px;
+        padding-left: 260px;
         padding-top: 100px;
             h2{
-                max-width: 833px;
-                font-size: 3rem;
+                max-width: 600px;
+                font-size: 64px;
                 line-height: 74px;
                 letter-spacing: 3.88px;
                 &:first-child{
                     color: #47A62A;
-                    font-size: 5rem;
-                    line-height: 80.8px;
-                    letter-spacing: 4.85px;
+                    font-size: 80px;
+                    line-height: 74px;
+                    letter-spacing: 3px;
                     text-transform: uppercase;
-                    margin-bottom: 64px;
                 }
         }
     }

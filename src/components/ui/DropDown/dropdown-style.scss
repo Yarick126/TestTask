@@ -13,11 +13,13 @@
         padding: 20px 15px 20px 20px;
         row-gap: 10px;
         align-items: start;
-        background-color: #1E1E1E;
-        left: 15em;
-        button{ 
+        background-color: rgba($color: #1E1E1E, $alpha: .5);
+        left: 9vw;
+        .optionButton{ 
             text-transform: uppercase;
-        
+            background-color: rgba($color: #1E1E1E, $alpha: .0);
         }
+        border-bottom: 1px solid #c8a87b;
     }
+
 }

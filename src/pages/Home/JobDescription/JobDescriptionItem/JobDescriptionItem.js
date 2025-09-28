@@ -1,7 +1,7 @@
 import './job-description-item-style.scss'
-import Image from '../../../../components/ui/Image/Image'
+import Image from 'UI/Image/Image'
 import ItemDescription from './ItemDescription/ItemDescription'
-import RightSideImage from '../../../../assets/secondItemBlur.png'
+import RightSideImage from 'Assets/secondItemBlur.png'
 const JobDescriptionItem = ({itemImage, isRightSide, text, header}) => {
     const JobDescriptionItemElement = document.createElement('div')
     JobDescriptionItemElement.className = 'jobDescriptionItem'

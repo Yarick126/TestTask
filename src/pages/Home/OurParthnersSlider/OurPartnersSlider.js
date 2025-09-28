@@ -1,30 +1,22 @@
 import './our-partners-slider-style.scss'
-import Slider from '../../../components/ui/Slider/Slider'
+import Slider from 'UI/Slider/Slider'
 import SliderItem from './SliderItem/SliderItem'
-import {SLIDER_ITEM_TEXT} from '../../../data/constants.js'
-import FirstImageSliderItem from '../../../assets/1stSlide.png'
-import SecondImageSliderItem from '../../../assets/2ndSlide.png'
-import ThirdImageSliderItem from '../../../assets/3rdSlide.png'
-import ForthImageSliderItem from '../../../assets/4thSlide.png'
+
+import Title from '../../../components/ui/Title/Title.js'
+import { PARTNER_ITEMS } from '../../../data/partnerItems.js'
 
 const OurPartnersSlider = ({header}) => {
     const OurPartnersSliderComponent = document.createElement('div')
     OurPartnersSliderComponent.className = 'ourPartnersSlider'
-    const SliderHeader = document.createElement('h2')
-    SliderHeader.textContent = header
+    const slidesArray = []
+    OurPartnersSliderComponent.appendChild(Title({header: header, color: '#dcdcdc', lineWidth: '600px'}))
 
+    for (let i = 0; i < PARTNER_ITEMS.length; i++) {
+        slidesArray.push(SliderItem({id: PARTNER_ITEMS[i].id, text: PARTNER_ITEMS[i].text, image: PARTNER_ITEMS[i].imgSrc}))
+        
+    }
 
-    OurPartnersSliderComponent.appendChild(SliderHeader)
-    OurPartnersSliderComponent.appendChild(Slider({items: [
-        SliderItem({text: SLIDER_ITEM_TEXT, image: FirstImageSliderItem}),
-        SliderItem({text: SLIDER_ITEM_TEXT, image: SecondImageSliderItem}),
-        SliderItem({text: SLIDER_ITEM_TEXT, image: ThirdImageSliderItem}),
-        SliderItem({text: SLIDER_ITEM_TEXT, image: ForthImageSliderItem}),
-        SliderItem({text: SLIDER_ITEM_TEXT, image: FirstImageSliderItem}),
-        SliderItem({text: SLIDER_ITEM_TEXT, image: SecondImageSliderItem}),
-        SliderItem({text: SLIDER_ITEM_TEXT, image: ThirdImageSliderItem}),
-        SliderItem({text: SLIDER_ITEM_TEXT, image: ForthImageSliderItem}),
-    ]}))
+    OurPartnersSliderComponent.appendChild(Slider({items: slidesArray, className: 'ourPartner'}))
     return OurPartnersSliderComponent
 }
 

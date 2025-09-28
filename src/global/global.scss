@@ -1,16 +1,43 @@
 @import './reset.scss';
-@import 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap';
+
+
+@font-face {
+    font-family: "Atyp";
+    src: local('Atyp'),
+        url('../fonts/AtypDisplay-Regular.ttf') format('truetype'),
+        url('../fonts/AtypDisplay-Regular.woff') format('woff'),
+         url('../fonts/AtypDisplay-Regular.woff2') format('woff2')
+         url('../fonts/AtypDisplay-Medium.ttf') format('truetype'),
+         url('../fonts/AtypDisplay-Medium.woff') format('woff'),
+         url('../fonts/AtypDisplay-Medium.woff2') format('woff2'),
+         url('../fonts/AtypDisplay-Semibold.ttf') format('truetype'),
+         url('../fonts/AtypDisplay-Semibold.woff') format('woff'),
+         url('../fonts/AtypDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-Bold.ttf') format('truetype'),
+         url('../fonts/AtypDisplay-Bold.woff') format('woff'),
+         url('../fonts/AtypDisplay-Bold.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Cyrillic';
+    src: local('BebasNeueCyrillic')
+        url('../fonts/BebasNeueCyrillic.ttf') format('truetype'),
+        url('../fonts/BebasNeueCyrillic.woff') format('woff'),
+        url('../fonts/BebasNeueCyrillic.woff2') format('woff2');
+}
 
 html{
-    max-width: 1980px;
+    max-width: 1920px;
+    height: 100%;
+    width: 100%;
     body {
+
+        font-family: "Atyp";
         overflow-x: hidden;
         width: 100%;
-        font-family: "Inter", sans-serif;
+        height: 100%;
         font-optical-sizing: auto;
-        font-weight: normal;
-        font-style: normal;
         font-size: 14.14px;
         letter-spacing: 0.57px;
         line-height: 14.1px;
@@ -19,9 +46,7 @@ html{
             overflow-x: hidden;
         }
         h1,h2,h3{
-            font-family: "Inter", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: normal;
+            font-family: 'Bebas Neue Cyrillic';
             font-style: normal;
         }
     }

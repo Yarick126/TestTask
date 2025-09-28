@@ -1,9 +1,11 @@
 .slider{
-
+    position: relative;
+    z-index: 90;
     .sliderButton{
         color: #47A62A;
-        border-bottom: 2px dotted #47A62A;
+        writing-mode: horizontal-tb;
+        border-bottom:1px dashed #47A62A;
         margin-bottom: 27px;
+        font-size: 18px;
     }
-
 }

@@ -19,18 +19,19 @@
         }
         p{
             text-transform: uppercase;
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 18px;
+            font-weight: 600;
             text-align: center;
-            line-height: 25px;
+            line-height: 26px;
         }
     }
     .priceBox{
         height: 69px;
         font-size: 22px;
+        line-height: 26px;
         color: #47a62a;
         display: flex;
-        font-weight: bold;
+        font-weight: 600;
         flex-direction: column;
         justify-content: center;
         align-items: center;

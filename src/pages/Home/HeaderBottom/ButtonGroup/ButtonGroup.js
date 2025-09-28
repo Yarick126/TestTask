@@ -1,8 +1,8 @@
 import './button-group-style.scss'
 import ButtonGroupElement from './ButtonGroupElement/ButtonGroupElement'
-import FirstButtonIcon from '../../../../assets/firstButton.png'
-import SecondButtonIcon from '../../../../assets/second.png'
-import ThirdButtonIcon from '../../../../assets/third.png'
+import FirstSvg from 'Assets/svg.svg'
+import SecondSvg from 'Assets/svg3.svg'
+import ThirdSvg from 'Assets/svg2.svg'
 
 const ButtonGroup = () => {
 
@@ -11,16 +11,16 @@ const ButtonGroup = () => {
     ButtonGroupComponent.appendChild(ButtonGroupElement({
         firstText: 'РАССЧИТАТЬ ОБСАДУ',
         secondText: 'ОТ РАЗМЕРА ОКОН',
-        buttonIcon: FirstButtonIcon}))
+        svgIcon: FirstSvg}))
     ButtonGroupComponent.appendChild(ButtonGroupElement({
         firstText: 'РАССЧИТАТЬ ОБСАДУ',
         secondText: 'ОТ РАЗМЕРА ПРОЕМОВ',
-        buttonIcon: SecondButtonIcon}))
+        svgIcon: SecondSvg}))
 
     ButtonGroupComponent.appendChild(ButtonGroupElement({
         firstText: 'РАССЧИТАТЬ ОБСАДУ',
         secondText: 'ПО ТОЧНЫМ РАЗМЕРАМ',
-        buttonIcon: ThirdButtonIcon}))
+        svgIcon: ThirdSvg}))
 
 
     return ButtonGroupComponent

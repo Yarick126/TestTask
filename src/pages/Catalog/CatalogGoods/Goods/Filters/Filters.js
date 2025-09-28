@@ -7,7 +7,7 @@ const Filters = () => {
     const FiltersComponent = document.createElement('div')
     FiltersComponent.className = 'filters'
 
-    const PriceTitle = document.createElement('span')
+    const PriceTitle = document.createElement('h3')
     PriceTitle.textContent = 'цена:'
     const PricesBox = document.createElement('div')
     PricesBox.className = 'pricesBox'

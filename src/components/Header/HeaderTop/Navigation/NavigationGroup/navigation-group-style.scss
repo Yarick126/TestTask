@@ -1,17 +1,23 @@
 .navigationGroup{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    column-gap: 45px;
     a{
         color: white;
-        font-size: 14px;
+        font-size: 15px;
         letter-spacing: 0.57px;
-        font-weight: bold;
+        line-height: 28px;
+        font-weight: 600;
         text-decoration: none;
         align-self: center;
         &:hover{
             color: #C8A87B;
             cursor: pointer;
         }
+    }
+    button{
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 600;
     }
 }

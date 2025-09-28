@@ -6,7 +6,7 @@ const Filter = ({text, checkBoxArray}) => {
     FilterComponent.className = 'filter'
     const line = document.createElement('hr')
 
-    const FilterHeader = document.createElement('span')
+    const FilterHeader = document.createElement('h3')
     FilterHeader.className = 'filterHeader'
     FilterHeader.textContent = text
     

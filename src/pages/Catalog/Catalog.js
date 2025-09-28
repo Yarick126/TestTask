@@ -5,6 +5,9 @@ import DescriptionOfItem from './DescriptionOfItem/DescriptionOfItem';
 const Catalog = () => {
     const CatalogComponent = document.createElement('main')
     CatalogComponent.className = 'catalog'
+    const headerBackground = document.createElement('div')
+    headerBackground.className = 'headerBackground'
+    CatalogComponent.appendChild(headerBackground)
     CatalogComponent.appendChild(CatalogGoods())
     CatalogComponent.appendChild(DescriptionOfItem())
     

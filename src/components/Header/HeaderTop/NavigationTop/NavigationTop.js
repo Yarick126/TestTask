@@ -9,10 +9,19 @@ const NavigationTop = () => {
     
     NavigationTopComponent.className = 'navigationTopComponent'
 
-    NavigationTopComponent.appendChild(GraphicInfo())
-    NavigationTopComponent.appendChild(ContactInfo())
-    NavigationTopComponent.appendChild(Search())
-    NavigationTopComponent.appendChild(SignIn())
+    const graphicAndContactBox = document.createElement('div')
+    graphicAndContactBox.className = 'graphicAndContactBox'
+    graphicAndContactBox.appendChild(GraphicInfo())
+    graphicAndContactBox.appendChild(ContactInfo())
+
+    const searchAndSignBox = document.createElement('div')
+    searchAndSignBox.className = 'searchAndSignBox'
+    searchAndSignBox.appendChild(Search())
+    searchAndSignBox.appendChild(SignIn())
+
+    NavigationTopComponent.appendChild(graphicAndContactBox)
+    NavigationTopComponent.appendChild(searchAndSignBox)
+
     return NavigationTopComponent
 }
 

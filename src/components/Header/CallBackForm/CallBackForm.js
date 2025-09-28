@@ -1,9 +1,10 @@
 import './call-back-form-style.scss'
 import Field from './Filed/Field'
-import FIOIcon from 'Assets/eclips.png';
-import PhoneIcon from 'Assets/phone.png'
+import FIOIcon from 'Assets/fioSVG.svg';
+import PhoneIcon from 'Assets/phoneSVG.svg'
 import Image from 'UI/Image/Image';
 import ExitIcon from 'Assets/exitIcon.png'
+import Title from '../../ui/Title/Title';
 
 const CallBackForm = () => {
     const CallBackFormComponent = document.createElement('form')
@@ -18,9 +19,7 @@ const CallBackForm = () => {
     })
     exitSection.appendChild(exitIcon)
 
-    const Title = document.createElement('h2')
-    Title.className = 'formTitle'
-    Title.textContent = 'ОБРАТНЫЙ ЗВОНОК'
+
     const FIOField = Field({text: 'Ваши Фио', icon: FIOIcon, className: 'Name', index: 1})
     const PhoneField = Field({text: 'Телефон', icon: PhoneIcon, className: 'Phone' , index: 2})
 
@@ -43,7 +42,7 @@ const CallBackForm = () => {
     CallBackFormButton.setAttribute('type', 'submit')
     CallBackFormButton.addEventListener('click', (e)=>{e.preventDefault()})
     CallBackFormComponent.appendChild(exitSection)
-    CallBackFormComponent.appendChild(Title)
+    CallBackFormComponent.appendChild(Title({header: 'обратный звонок', color: '#8c8c8c', lineWidth: '490px'}))
     CallBackFormComponent.appendChild(FIOField)
     CallBackFormComponent.appendChild(PhoneField)
     CallBackFormComponent.appendChild(AgreementComponent)

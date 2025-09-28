@@ -1,0 +1,17 @@
+.title{
+        position: relative;
+        width: fit-content;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        hr{
+            position: absolute;
+            z-index: -100;
+        }
+        h2{
+            box-sizing: border-box;
+            text-align: center;
+        }
+}

@@ -9,11 +9,16 @@
         height: 43px;
 
     }
-    .leftArrow{
+    .leftArrow {
         background-image: url('Assets/arrowRight.png');
         background-repeat: no-repeat;
         background-position: center;
         transform: scaleX(-1);
+    }
+    .disabled{
+        -webkit-filter: grayscale(1);
+        filter: gray; 
+        filter: grayscale(1);
     }
 
     .rightArrow{
@@ -22,7 +27,8 @@
         background-position: center;
     }
 
-    .pageButton{
+    .pageButton {
+        display: none;
         color: black;
         font-size: 16px;
         text-align: center;
@@ -30,9 +36,18 @@
             background-color: #47a62a;
             color:white;
         }
-        &:focus{
-            background-color: #47a62a;
-            color:white;
-        }
+    }
+    .green{
+        background-color: #47a62a;
+        color:white;
+    }
+    .visible{
+        display: block;
+    }
+    .dots{
+        display: none;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
     }
 }

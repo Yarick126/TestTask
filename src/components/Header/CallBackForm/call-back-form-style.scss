@@ -23,12 +23,7 @@
             cursor: pointer;
         }
     }
-    .formTitle{
-        font-size: 46.46px;
-        line-height: 46.5px;
-        letter-spacing: 2.79px;
-        color: #8D8D8D;
-    }
+
     .agreementComponent{
         margin-top: 14px;
         display: flex;
@@ -44,13 +39,14 @@
             appearance: none;
             width: 24px;
             height: 24px;
-            background: #8c8c8c;
+            background: none;
+            border: 1px solid #8c8c8c;
             position: relative;
             &:checked::before{
                 content: "";
                 position: absolute;
-                top: 5px;
-                left: 5px;
+                top: 4px;
+                left: 4px;
                 width: 14px;
                 height: 14px;
                 background-color: #48A62A;
@@ -71,5 +67,16 @@
             outline: none;
         }
         cursor: pointer;
+    }
+
+    .title{
+
+        h2{
+            width: 370px;
+            font-size: 46px;
+            line-height: 66px;
+            color: #8d8d8d;
+            background-color: #1E1E1E;
+        }
     }
 }

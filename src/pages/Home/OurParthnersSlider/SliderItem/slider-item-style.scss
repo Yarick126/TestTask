@@ -1,58 +1,50 @@
-.sliderItem {
-    width: 314px;
-    height: fit-content;
-    background-color: #F6F6F6;
-    border: 1px solid #F6F6F6;
-    z-index: 1;
-    -webkit-filter: grayscale(1);
-    filter: gray; 
-    filter: grayscale(1);
-    padding-bottom: 20px;
-    .imageDiv{
-        height: 182px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding-left: 96px;
-        padding-right: 96px;
-        .sliderImage{
-
+.sliderItem{
+    position: relative;
+    left: 0px;
+        width: 314px;
+        background-color: #F6F6F6;
+        border: 1px solid transparent;
+        -webkit-filter: grayscale(1);
+        filter: gray; 
+        filter: grayscale(1);
+        padding-bottom: 20px;
+        .imageDiv{
+            height: 182px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-left: 96px;
+            padding-right: 96px;    
         }
-    }
 
-    .sliderItemText{
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0px;
-        height: 31px;
-        border-top: solid 2px #E6E6E6;
+        .sliderItemText{
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0px;
+            height: 31px;
+            border-top: solid 2px #E6E6E6;
 
-        text-transform: none;
-        overflow: hidden;
+            text-transform: none;
+            overflow: hidden;
 
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 13px;
-        color: gray;
-
-    }
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 13px;
+            color: gray;
+            
+        }
     &:hover{
-
         -webkit-filter: grayscale(0);  
         filter: none; 
         filter: grayscale(0);
-
         border: 1px solid #C8A87B;
-
         height: fit-content;
-        
+        z-index: 10;
         .sliderItemText{
             overflow: visible;
             height: fit-content;
+            color: black;
         }
-        .sliderItemText{
-            color: black
-        }
-    }
+        }    
 }

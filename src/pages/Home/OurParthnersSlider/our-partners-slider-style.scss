@@ -1,16 +1,28 @@
 .ourPartnersSlider{
+    box-sizing: border-box;
     font-size: 64.64px;
     line-height: 64.6px;
     letter-spacing: 3.88px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
-    column-gap: 13px;
-
+    
     justify-content: center;
     align-items: center;
 
-    padding-bottom: 90px;
+    .slider {
+        height: fit-content;
+        .sliderItems{
+            height: 320px;
+        }
+    }
+
+    .title{
+        h2{
+            background-color: white;
+            width: 440px;
+        }
+    }
 }
